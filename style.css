@@ -1,0 +1,982 @@
+
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+  color: #666666;
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #121518;
+}
+
+a {
+  color: #454545;
+  transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #00094B;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #00094B;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 9;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #121518;
+}
+
+.back-to-top i {
+  padding-top: 10px;
+}
+
+
+/**********************************/
+/********** Top Bar CSS ***********/
+/**********************************/
+.top-bar {
+    position: relative;
+    height: 90px;
+    background: #000000;
+}
+
+.top-bar .logo {
+    padding: 15px 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+.top-bar .logo h1 {
+    margin: 0;
+    color: #00094B;
+    font-size: 75px;
+    line-height: 55px;
+    font-weight: 800;
+}
+
+.top-bar .logo img {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+.top-bar .top-bar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-bar .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90px;
+    padding: 0 20px;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, .15);
+}
+
+.top-bar .text h2 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+.top-bar .text p {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+}
+
+.top-bar .social {
+    display: flex;
+    height: 90px;
+    font-size: 0;
+    justify-content: flex-end;
+}
+
+.top-bar .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    font-size: 22px;
+    color: #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, .15);
+}
+
+.top-bar .social a:first-child {
+    border-left: 1px solid rgba(255, 255, 255, .15);
+}
+
+.top-bar .social a:hover {
+    color: #00094B;
+    background: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .top-bar {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .top-bar .logo {
+        text-align: center;
+    }
+    
+    .top-bar .social {
+        display: none;
+    }
+}
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.nav-bar {
+    position: relative;
+    padding: 20px 0;
+    transition: .3s;
+}
+
+.nav-bar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.nav-bar .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #00094B;
+    transition: none;
+}
+
+.nav-bar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+}
+
+.nav-bar .btn {
+    color: #ffffff;
+    border: 2px solid #00094B;
+    border-radius: 0;
+}
+
+.nav-bar .btn:hover {
+    background: #00094B;
+}
+
+@media (min-width: 992px) {
+    .nav-bar {
+        padding: 20px 60px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 10px 60px;
+    }
+    
+    .nav-bar,
+    .nav-bar .navbar {
+        background: #121518 !important;
+    }
+    
+    .nav-bar .navbar-brand {
+        display: none;
+    }
+    
+    .nav-bar a.nav-link {
+        padding: 8px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .nav-bar,
+    .nav-bar .navbar {
+        padding: 3px 0;
+        background: #121518 !important;
+    }
+    
+    .nav-bar a.nav-link {
+        padding: 5px;
+    }
+    
+    .nav-bar .dropdown-menu {
+        box-shadow: none;
+    }
+    
+    .nav-bar .btn {
+        display: none;
+    }
+}
+
+
+/*******************************/
+/******** Carousel CSS *********/
+/*******************************/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 170px);
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel .carousel-inner,
+.carousel .carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .carousel-item img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+.carousel .carousel-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.carousel .carousel-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    height: calc(100vh - 170px);
+}
+
+.carousel .carousel-caption h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.carousel .carousel-caption p {
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.carousel .carousel-caption .btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #121518;
+    border: 2px solid #00094B;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.carousel .carousel-caption .btn:hover {
+    color: #fff;
+    background: #00094B;
+}
+
+@media (max-width: 767.98px) {
+    .carousel .carousel-caption h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+    .carousel .carousel-caption p {
+        font-size: 20px;
+    }
+    
+    .carousel .carousel-caption .btn {
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .carousel .carousel-caption p {
+        font-size: 16px;
+    }
+    
+    .carousel .carousel-caption .btn {
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}
+
+.carousel .animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+
+/*******************************/
+/******** Top Feature CSS ******/
+/*******************************/
+.feature-top {
+  position: relative;
+  background: #121518;
+  margin-bottom: 45px;
+}
+
+.feature-top .col-md-3 {
+  border-right: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+@media (max-width: 575.98px) {
+  .feature-top .col-md-3:nth-child(1n) {
+      border-right: none;
+  }
+  
+  .feature-top .col-md-3:last-child {
+      border-bottom: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .feature-top .col-md-3:nth-child(2n) {
+      border-right: none;
+  }
+  
+  .feature-top .col-md-3:nth-child(3n),
+  .feature-top .col-md-3:nth-child(4n) {
+      border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature-top .col-md-3 {
+      border-bottom: none;
+  }
+  
+  .feature-top .col-md-3:nth-child(4n) {
+      border-right: none;
+  }
+}
+
+.feature-top .feature-item {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.feature-top .feature-item i {
+  color: #00094B;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.feature-top .feature-item h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.feature-top .feature-item p {
+  color: #999999;
+  margin: 0;
+  font-size: 18px;
+}
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.section-header h2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  left: 0;
+  top: 21px;
+  background: transparent;
+  border-top: 1px solid #00094B;
+  border-bottom: 1px solid #00094B;
+  z-index: -1;
+}
+
+.section-header h2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 7px;
+  left: 0;
+  bottom: 20px;
+  background: transparent;
+  border-top: 1px solid #00094B;
+  border-bottom: 1px solid #00094B;
+  z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+      font-size: 30px;
+  }
+}
+
+
+
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+}
+
+.about .section-header {
+  margin-bottom: 30px;
+}
+
+.about .about-img {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  background: #121518;
+}
+
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .about-text p {
+  font-size: 16px;
+}
+
+.about .about-text a.btn {
+  position: relative;
+  margin-top: 15px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #00094B;
+  border-radius: 0;
+  background: #121518;
+  transition: .3s;
+}
+
+.about .about-text a.btn:hover {
+  color: #fff;
+  background: #00094B;
+}
+
+@media (max-width: 767.98px) {
+  .about .about-img {
+      margin-bottom: 30px;
+      height: auto;
+  }
+}
+
+
+/* end of about */
+
+
+/* prctice area / services */
+
+.wrapper1{
+  width: 1170px;
+  margin: 5% auto;
+  
+  
+  
+}
+
+.single-service {
+position: relative;
+width: 31%;
+height: 320px;
+background: black;
+box-sizing: border-box;
+padding: 0 15px;
+transition: .5s;
+overflow: hidden;
+display: inline-block;
+margin: 0 10px;
+text-align: center;
+}
+
+.line {
+width: 150px;
+height: 3px;
+background: #00094B;
+margin: 0 auto 60px auto;
+}
+.single-service p{            
+  color: #fff;
+  font-size: 14px;
+}
+
+.service1 {
+width: 60px;
+height: 60px;
+background: #262626;
+border-radius: 50%;
+margin: 5% auto;
+}
+.service1 i {
+font-size: 30px;
+padding: 15px;
+  color: #fff;
+}
+.single-service:hover{
+  box-shadow: 0 30px 35px rgba(0,0,0,0.7);
+}
+.single-service span {
+position: absolute;
+top: 0;
+left: -110%;
+width: 100%;
+height: 100%;
+background: #00094B;
+transition: .7s;
+transform: skewX(10deg);
+}
+.single-service:hover span{
+  left: 110%;
+}
+
+@media (max-width:1000px){
+  .wrapper1 {
+width: 100%;
+}
+.single-service {
+width: 95%;
+margin-bottom: 30px;
+}
+.wrapper1 h2 {
+font-size: 30px;
+}
+} 
+
+
+/* end of practice areas/services */
+
+
+/** team section **/
+
+ .team {
+  background: #121518;
+} 
+
+
+.team .titlepage h2 {
+  color: #010000;
+}
+
+.team .team_Carousel .carousel-caption {
+  position: inherit;
+  padding: 0;
+}
+
+.team_box {
+  text-align: center;
+}
+
+.team_img img {
+  margin-top: 10%;
+  margin-bottom: 30px;
+  border-radius: 220px;
+  border: #00094B solid 15px;
+}
+
+ul.social_icont {
+  margin-top: 41%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.social_icont li {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.social_icont li a {
+  color: #060400;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  font-size: 22px;
+}
+
+#ho_bg:hover.team_img img {
+  border: #000000 solid 15px;
+
+}
+
+.ho_socal:hover {
+  opacity: 1;
+}
+
+.ho_socal {
+  position: absolute;
+  z-index: 9999;
+  top: 13px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .5s ease;
+  background-color: #00094B;
+  border-radius: 381px;
+  width: 242px;
+  margin: 0 auto;
+  height: 247px;
+  opacity: 0;
+  margin-top: 80px;
+}
+
+/* .team_Carousel .carousel-indicators {
+  bottom: -30px;
+  align-items: center;
+} */
+
+.team_Carousel .carousel-indicators .active {
+  background-color: #fff;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border: #00094B solid 4px;
+}
+
+.team_Carousel .carousel-indicators li {
+  background-color: #000000;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+}
+
+#team .carousel-control-next,
+#team .carousel-control-prev {
+  display: none;
+}
+
+
+/** end team section **/
+
+/*******************************/
+/********* Feature CSS *********/
+/*******************************/
+.feature {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+}
+
+.feature .feature-item {
+  margin-bottom: 30px;
+}
+
+.feature .feature-icon {
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00094B;
+}
+
+.feature .feature-icon i {
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 60px;
+  color: #002ead;
+  background: #000000;
+  transition: .5s;
+}
+
+.feature .feature-item:hover .feature-icon i {
+  margin-right: -15px;
+}
+
+.feature .feature-item h3 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.feature .feature-item h3::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #002ead;
+}
+
+.feature .feature-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.feature .feature-img {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  background: #121518;
+}
+
+.feature .feature-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* end of feature why choose us */
+
+
+/* testimonials */
+
+
+.testimonial {
+  padding-top: 50px;
+  background: linear-gradient(
+    to right,
+    #000000 0%,
+    #000000 50%,
+    #000000 50%,
+    #fff 100%
+  );
+  
+ 
+}
+
+.testimonial .titlepage {
+  text-align: center;
+}
+
+/* .testimonial .titlepage h2 {
+  color: #aa9166;
+} */
+
+.testimonial .testimonial_Carousel .carousel-caption {
+  position: inherit;
+  padding: 0;
+  
+}
+
+.testimonial_box {
+  text-align: center;
+  
+  
+}
+
+.testimonial_Carousel .test_box span {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 28px;
+  padding-top: 27px;
+  padding-bottom: 150px;
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 20px;
+  
+}
+
+.testimonial_Carousel .test_box p {
+  font-size: 16px;
+  padding: 20px;
+  line-height: 28px;
+  color: #fff;
+  text-align: left;
+  border: #000000 solid 1px;
+  display: inline-block;
+  margin-bottom: 30px;
+  background-color: #00094B
+}
+
+.testimonial_Carousel .test_box i {
+  float: left;
+
+}
+
+.testimonial_Carousel .carousel-indicators {
+  bottom: 100px;
+  margin-right: 0px;
+}
+
+.testimonial_Carousel .carousel-indicators li {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+}
+
+.testimonial_Carousel .carousel-indicators .active {
+  background-color: #002ead;
+}
+
+#testimo .carousel-control-next,
+#testimo .carousel-control-prev {
+  display: none;
+} 
+
+
+
+
+/* end of testimonials */
+
+ /* contact */
+ .main-section{
+  padding: 15px;
+  
+  
+}
+.flex-container{
+    display: flex;
+}
+.flex-child {
+    flex: 1;
+    border: 2px ;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+/* .custom-file-control::after {
+content: "Choose file...";
+}
+.custom-file-control::before {
+content: "Browse";
+} */
+/* end of contact */
+
+/* Get appointment */
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.bg-appointment {
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(images/carousel-3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+/* pop over with couresel service */
+
+
+
+
+
+
+
+
