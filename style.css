@@ -211,7 +211,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #00094B;
+    color: #002ead;
     transition: none;
 }
 
@@ -224,7 +224,7 @@ a:focus {
 
 .nav-bar .btn {
     color: #ffffff;
-    border: 2px solid #00094B;
+    border: 2px solid #002ead;
     border-radius: 0;
 }
 
@@ -413,7 +413,7 @@ a:focus {
     text-transform: uppercase;
     color: #fff;
     background: #121518;
-    border: 2px solid #00094B;
+    border: 2px solid #002ead;
     border-radius: 0;
     transition: .3s;
 }
@@ -516,7 +516,7 @@ a:focus {
 }
 
 .feature-top .feature-item i {
-  color: #00094B;
+  color: #002ead;
   font-size: 35px;
   margin-bottom: 10px;
 }
@@ -627,7 +627,7 @@ a:focus {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
-  border: 2px solid #00094B;
+  border: 2px solid #002ead;
   border-radius: 0;
   background: #121518;
   transition: .3s;
@@ -1373,7 +1373,7 @@ border-color: #00094B;
     text-transform: uppercase;
     color: #fff;
     background: #121518;
-    border: 2px solid #00094B;
+    border: 2px solid #002ead;
     border-radius: 0;
     transition: .3s;
 }
