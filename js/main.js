@@ -108,26 +108,6 @@
     
 })(jQuery);
 
-
-
-
-// The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
-
-function showhide() {
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("toggle");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
-  
   
   
 
