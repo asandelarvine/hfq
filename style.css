@@ -651,81 +651,282 @@ a:focus {
 
 /* prctice area / services */
 
-.wrapper1{
-  width: 1170px;
-  margin: 5% auto;
-  
-  
-  
+.section1-services {
+	font-family: "Poppins", sans-serif;
+	background-color: #e6edf7;
+	color: #000000;
+	padding-top: 115px;
+    padding-bottom: 120px;
 }
 
-.single-service {
-position: relative;
-width: 31%;
-height: 320px;
-background: black;
-box-sizing: border-box;
-padding: 0 15px;
-transition: .5s;
-overflow: hidden;
-display: inline-block;
-margin: 0 10px;
-text-align: center;
+.section1-services .header-section {
+	margin-bottom: 34px;
 }
 
-.line {
-width: 150px;
-height: 3px;
-background: #00094B;
-margin: 0 auto 60px auto;
+.section1-services .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
 }
-.single-service p{            
+
+.section1-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #00094B;
+    border-radius: 3px;
+}
+
+.section1-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #00094b;
+    border-radius: 3px;
+}
+
+.section1-services .header-section .description {
+	font-size: 14px;
+    color: #282828;
+}
+
+.section1-services .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.section1-services .single-service .content {
+	position: relative;
+	z-index: 20;
+}
+
+.section1-services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #00094B;
+    border: 6px solid #002ead;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.section1-services .single-service:hover .circle-before {
+	width: 100%;
+	height: 100%;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.section1-services .single-service .icon {
+	display: inline-block;
+	margin-bottom: 26px;
+    width: 70px;
+    height: 70px;
+    background-color: #00094B;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.section1-services .single-service:hover .icon {
+	background-color: #fff;
+	color: #002ead;
+}
+
+.section1-services .single-service .title {
+    margin-bottom: 18px;
+	font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.section1-services .single-service:hover .title {
+	color: #fff;
+}
+
+.section1-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.section1-services .single-service:hover .description {
+	color: #fff;
+}
+
+.section1-services .single-service a {
+	position: relative;
+	font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.section1-services .single-service:hover a {
+	color: #fff;
+}
+
+.section1-services .single-service a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #00094B;
+	transition: background-color .3s;
+}
+
+.section1-services .single-service:hover a:after {
+	background-color: #fff;
+}
+/* end of services in home-page */
+
+/* start of services in services-page */
+::selection{
+  background: #6d50e2;
   color: #fff;
-  font-size: 14px;
+  
+  
 }
+.service{
+  max-width: 950px;
+  width: 100%;
+  padding: 80px 25px  80px  80px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 210px;
+  
+ 
+  
+}
+.service .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-right: 50px;
+  position: relative;
+  line-height: 80px;
+ 
+}
+.content .list label{
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #000000;
+  z-index: 12;
+}
+#conveyancing:checked ~ .list label.conveyancing,
+#litigation:checked ~ .list label.litigation,
+#cooperate-commercial:checked ~ .list label.cooperate-and-commercial,
+#legal-research:checked ~ .list label.legal-research{
 
-.service1 {
-width: 60px;
-height: 60px;
-background: #262626;
-border-radius: 50%;
-margin: 5% auto;
-}
-.service1 i {
-font-size: 30px;
-padding: 15px;
   color: #fff;
 }
-.single-service:hover{
-  box-shadow: 0 30px 35px rgba(0,0,0,0.7);
+.content .list label:hover{
+  color: #00094B;
 }
-.single-service span {
-position: absolute;
-top: 0;
-left: -110%;
-width: 100%;
-height: 100%;
-background: #00094B;
-transition: .7s;
-transform: skewX(10deg);
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #00094B;
+  transition: all 0.4s ease;
 }
-.single-service:hover span{
-  left: 110%;
+#conveyancing:checked ~ .list .slider{
+  top: 0;
 }
+#litigation:checked ~ .list .slider{
+  top: 60px;
+}
+#cooperate-and-commercial:checked ~ .list .slider{
+  top: 120px;
+}
+#legal-research:checked ~ .list .slider{
+  top: 180px;
+}
+/* #about:checked ~ .list .slider{
+  top: 240px;
+} */
+.content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.content .text{
+  display: none;
+}
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.content .text p{
+  text-align: justify;
+}
+.content .text-content .home{
+  display: block;
+}
+#conveyancing:checked ~ .text-content .conveyancing,
+#litigation:checked ~ .text-content .litigation,
+#cooperate-and-commercial:checked ~ .text-content .cooperate-and-commercial,
+#legal-research:checked ~ .text-content .legal-research{
 
-@media (max-width:1000px){
-  .wrapper1 {
-width: 100%;
+  display: block;
 }
-.single-service {
-width: 95%;
-margin-bottom: 30px;
+#litigation:checked ~ .text-content .conveyancing,
+#cooperate-and-commercial:checked ~ .text-content .conveyancing,
+#legal-research:checked ~ .text-content .conveyancing{
+  display: none;
 }
-.wrapper1 h2 {
-font-size: 30px;
+.content input{
+  display: none;
 }
-} 
-
 
 /* end of practice areas/services */
 
