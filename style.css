@@ -759,7 +759,7 @@ a:focus {
 .section1-services .single-service .title {
     margin-bottom: 100px;
 	font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     transition: color .3s;
 }
 
@@ -769,7 +769,7 @@ a:focus {
 
 .section1-services .single-service .description {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 12px;
     transition: color .3s;
 }
 
