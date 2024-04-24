@@ -468,7 +468,7 @@ a:focus {
 /*******************************/
 /******** Top Feature CSS ******/
 /*******************************/
-.feature-top {
+/* .feature-top {
   position: relative;
   background: #121518;
   margin-bottom: 45px;
@@ -531,7 +531,7 @@ a:focus {
   color: #999999;
   margin: 0;
   font-size: 18px;
-}
+} */
 
 /*******************************/
 /******* Section Header ********/
@@ -653,7 +653,7 @@ a:focus {
 
 .section1-services {
 	font-family: "Poppins", sans-serif;
-	background-color: #e6edf7;
+	background-color: #fff;
 	color: #000000;
 	padding-top: 115px;
     padding-bottom: 120px;
@@ -697,13 +697,13 @@ a:focus {
 
 .section1-services .header-section .description {
 	font-size: 14px;
-    color: #282828;
+    color: #000000;
 }
 
 .section1-services .single-service {
     position: relative;
     margin-top: 30px;
-    background-color: #fff;
+    background-color: #e7ebf7;
     border-radius: 10px;
     padding: 40px 30px;
     overflow: hidden;
@@ -719,12 +719,11 @@ a:focus {
     top: 0;
     right: 0px;
     transform: translate(40%, -40%);
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     background-color: #00094B;
     border: 6px solid #002ead;
     border-radius: 50%;
-    opacity: 0.5;
     z-index: 10;
     transition: all .6s;
 }
@@ -758,9 +757,9 @@ a:focus {
 }
 
 .section1-services .single-service .title {
-    margin-bottom: 18px;
+    margin-bottom: 100px;
 	font-weight: 700;
-    font-size: 23px;
+    font-size: 18px;
     transition: color .3s;
 }
 
@@ -780,7 +779,7 @@ a:focus {
 
 .section1-services .single-service a {
 	position: relative;
-	font-size: 18px;
+	font-size: 15px;
     color: #202020;
     text-decoration: none;
     font-weight: 500;
@@ -809,7 +808,7 @@ a:focus {
 
 /* start of services in services-page */
 ::selection{
-  background: #6d50e2;
+  background: #002ead;
   color: #fff;
   
   
@@ -934,83 +933,84 @@ a:focus {
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
-.team {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-  display: flex;
-  /* align-items: center; */
+.demo{ background: #fff; }
+.our-team{
+    text-align: center;
+    position: relative;
 }
-
-.team .team-item {
-  margin-bottom: 30px;
-}
-
-.team .team-img {
-  position: relative;
-  
-}
-
-.team .team-img img {
-    width: 150px;
-    height: 150px;
+.our-team .pic{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
-  
+    border: 8px solid #002ead;
+    margin: 0 auto;
+    overflow: hidden;
 }
-
-.team .team-text {
-  position: relative;
-  padding: 50px 75px 30px 75px;
-  text-align: center;
-  background: #00094B;
+.our-team img{
+    width: 100%;
+    height: auto;
 }
-
-.team .team-text h2 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #fff;
+.our-team .social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    transition: all 0.3s ease-out 0s;
 }
-
-.team .team-text p {
-  margin: 0;
-  color: #999999;
+.our-team .social li a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #002ead;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    transform: scale(0);
+    transition: all 0.2s ease 0s;
 }
-
-.team .team-social {
-  position: absolute;
-  width: calc(100% - 60px);
-  height: 50px;
-  top: -25px;
-  left: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  font-size: 0;
-  transition: .5s;
+.our-team:hover .social li a{ transform: scale(1); }
+.our-team:hover .social li a:hover{ background: #00094b; }
+.our-team .team-content{
+    padding: 15px 15px 20px;
+    background: #000000;
+    border-radius: 40px 10px;
+    margin-top: -20px;
+    color: #00094b;
+    
 }
-
-.team .team-item:hover .team-social {
-  width: 100%;
-  left: 0;
+.our-team .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
 }
-
-.team .team-social a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 18px;
-  text-align: center;
-  color: #121518;
-  transition: .3s;
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
-
-.team .team-social a:last-child {
-  margin-right: 0;
+.our-team .description{
+    padding: 20px;
+    background: #e7ebf7;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+    margin-bottom: 0;
 }
-
-.team .team-social a:hover {
-  color: #002ead;
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 359px){
+    .our-team .pic{
+        width: 150px;
+        height: 150px;
+    }
+    .our-team .social{ top: 20px; }
 }
 
 .card {
@@ -1036,8 +1036,8 @@ a:focus {
   backface-visibility: hidden;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
-   border-right: 1px solid #999;
-border-bottom: 1px solid #999; 
+   border-right: 1px solid #00094b;
+border-bottom: 1px solid #00094b; 
 }
 
 .card .face.front-face,
@@ -1230,8 +1230,8 @@ border-bottom: 1px solid #999;
 }
 
 .feature .feature-icon i {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   padding: 20px 0;
   text-align: center;
   font-size: 60px;
@@ -1286,10 +1286,11 @@ border-bottom: 1px solid #999;
 /******* Testimonial CSS *******/
 /*******************************/
 
-.testim{
+/* .testim{
   width: 100%;
   top: 50%;
-  /* background-color: #ffffff; */
+  
+  
 }
 .testim .wrap{
   position: relative; 
@@ -1466,7 +1467,7 @@ border-color: #00094B;
       opacity: 0;
       transform: scale(0);
   }
-}
+} */
 
 
 

@@ -55,6 +55,25 @@
      <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
+    <style>
+        @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+    </style>
+
 
     <title>hFarooq</title>
 </head>
@@ -181,7 +200,7 @@
   
   
   <!-- Top Feature Start-->
-  <div class="feature-top">
+  <!-- <div class="feature-top">
       <div class="container-fluid">
           <div class="row align-items-center">
               <div class="col-md-3 col-sm-6">
@@ -214,7 +233,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
   <!-- Top Feature End-->
 
    <!-- About Start -->
@@ -256,12 +275,15 @@
 		<div class="container">
 			<div class="row justify-content-center text-center">
 				<div class="col-lg-6">
-					<div class="header-section">
-						<h2 class="title">Our Practice Areas</h2>
+                    <div class="section-header">
+                        <h2>Our Practice Areas</h2>
+                    </div>
+					
+						
 						<p class="description">
                             We offer the following services
                         </p>
-					</div>
+					
 				</div>
 			</div>
 			<div class="row">
@@ -272,11 +294,9 @@
 							<span class="icon">
 								<i class="fa fa-gavel"></i>
 							</span>
-							<h3 class="title">Conveyancing</h3>
+							<h6 class="title">Conveyancing</h6>
 							<p class="description">
-                                Conveyancing being that one complex area that deals with alienation of interest in land from one
-                                person to another by means of appropriate instruments and documents, it involves a lot of drafting
-                                of and registry follow ups.
+                                Conveyancing being that one complex area that ...
                             </p>
                             <a class="btn" href="service.html">Learn More</a>
 							
@@ -292,12 +312,9 @@
 							<span class="icon">
 								<i class="fa fa-balance-scale"></i>
 							</span>
-							<h3 class="title">Litigation</h3>
+							<h6 class="title">Litigation</h6>
 							<p class="description">
-                                Navigating the Court Process has sometimes been a complex and broad process especially when
-                                not approached by skilled paralegals
-                                At HFarooq we ensure that all your paralegal needs in litigation are dealt with professionally and in
-                                a timely manner.
+                                Navigating the Court Process has sometimes been a ...
                             </p>
 							<a class="btn" href="service.html">Learn More</a>
 						</div>
@@ -312,9 +329,9 @@
 							<span class="icon">
 								<i class="fa fa-balance-scale"></i>
 							</span>
-							<h3 class="title">Cooperate and Commercial</h3>
+							<h6 class="title">Cooperate and Commercial</h6>
 							<p class="description">
-                                We offers corporate expertise such as; legal reviews including conducting due diligence;...
+                                We offers corporate expertise such as; ...
                             </p>
 							<a class="btn" href="service.html">Learn More</a>
 						</div>
@@ -329,10 +346,9 @@
 							<span class="icon">
 								<i class="fa fa-gavel"></i>
 							</span>
-							<h3 class="title">Legal Research</h3>
+							<h6 class="title">Legal Research</h6>
 							<p class="description">
-                                Legal research plays a very vital role in constructing and coming up with a persuasive legal
-                                arguments in court, be it during oral submissions or on written submissions.
+                                Legal research plays a very vital role in ...
                             </p>
 							<a class="btn" href="service.html">Learn More</a>
 						</div>
@@ -373,9 +389,7 @@
                    </div>
                    <div class="col-7">
                        <h3>Best law practices</h3>
-                       <p>
-                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                       </p>
+                       
                    </div>
                </div>
                <div class="row align-items-center feature-item">
@@ -386,9 +400,7 @@
                    </div>
                    <div class="col-7">
                        <h3>Efficiency & Trust</h3>
-                       <p>
-                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                       </p>
+                      
                    </div>
                </div>
                <div class="row align-items-center feature-item">
@@ -399,9 +411,7 @@
                    </div>
                    <div class="col-7">
                        <h3>Results you deserve</h3>
-                       <p>
-                           Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
-                       </p>
+                       
                    </div>
                </div>
            </div>
@@ -430,25 +440,20 @@
                             </div>
                                 <div class="team-text">
                                     <h2>Hassan Farooq  Ooko</h2>
-                                    <p>Immigration Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
+                                    <p style="text-align: center;" >Managing Partner</p>
+                                    
                                 </div>
                         </div>
                     </div>
                                 <div class="face back-face">
                                     <div class="team-text">
                                         <h2>Hassan Farooq Ooko</h2>
-                                        <p>Immigration Consultant</p>
+                                        <p> Managing Partner</p>
                                         <div class="team-social">
-                                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"class="fab fa-facebook"></a>
+                                            <a href="https://www.instagram.com/hfarooqparalegal" class="fab fa-instagram"></a>
+                                            <a href="https://twitter.com/farooqparalegal/" class="fab fa-twitter"></a>
+                                            <a class="social-in" href="mailto:ookofarook@gmail.com"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -465,26 +470,21 @@
                             </div>
                                 <div class="team-text">
                                     <h2>Tabitha Nduta Ngure</h2>
-                                    <p>Immigration Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
+                                    <p style="text-align: center;">Partner</p>
+
                                 </div>
                         </div>
                     </div>
                                 <div class="face back-face">
                                     <div class="team-text">
                                         <h2>Tabitha Nduta Ngure</h2>
-                                        <p>Immigration Consultant</p>
-                                        <p></p>
+                                        <p>Partner</p>
+                                        
                                         <div class="team-social">
-                                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"class="fab fa-facebook"></a>
+                                            <a href="https://www.instagram.com/hfarooqparalegal" class="fab fa-instagram"></a>
+                                            <a href="https://twitter.com/farooqparalegal/" class="fab fa-twitter"></a>
+                                            <a class="social-in" href="mailto:hfarooqparalegalservices@gmail.com"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
 
@@ -502,26 +502,21 @@
                             </div>
                                 <div class="team-text">
                                     <h2>Felix Nyakundi</h2>
-                                    <p>Immigration Consultant</p>
-                                    <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
-                                    </div>
+                                    <p style="text-align: center;">Partner</p>
+                                
                                 </div>
                         </div>
                     </div>
                                 <div class="face back-face">
                                     <div class="team-text">
                                         <h2>Felix Nyakundi</h2>
-                                        <p>Immigration Consultant</p>
+                                        <p>Partner</p>
                                         <p></p>
                                         <div class="team-social">
-                                            <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                            <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                            <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"class="fab fa-facebook"></a>
+                                            <a href="https://www.instagram.com/hfarooqparalegal" class="fab fa-instagram"></a>
+                                            <a href="https://twitter.com/farooqparalegal/" class="fab fa-twitter"></a>
+                                            <a class="social-in" href="mailto:fellohomwenga@gmail.com"><i class="fas fa-envelope"></i></a>
                                         </div>
                                     </div>
 
@@ -540,7 +535,7 @@
 
 
  <!-- Testimonial Start -->
-<div class="container">
+<!-- <div class="container">
  <section class="testim" id="testim">
     <div class="section-header">
         <h2>Testimonials</h2>
@@ -598,7 +593,7 @@
 
     </div>
  </section>
-</div>
+</div> -->
 <!-- Testimonial End -->
 <br><br>
 
