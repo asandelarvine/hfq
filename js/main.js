@@ -89,3 +89,4 @@
 		playSlide(currentSlide);
 	}
 })(jQuery);
+
