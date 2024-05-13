@@ -461,8 +461,9 @@ a:hover, a:active, a:focus {
 .about .about-img {
 	position: relative;
 	height: 100%;
-	padding: 10px;
+	padding: 3px;
 	background: #121518;
+	
 }
 .about .about-img img {
 	width: 100%;
@@ -634,112 +635,14 @@ a:hover, a:active, a:focus {
 .section1-services .single-service:hover a:after {
 	background-color: #fff;
 }
+
+/* new */
+
+
 /* end of services in home-page */
 
 /* start of services in services-page */
 
-::selection {
-	background: #002ead;
-	color: #fff;
-}
-.service {
-	max-width: 950px;
-	width: 100%;
-	padding: 80px 25px 80px 80px;
-	background: #fff;
-	margin: 0 20px;
-	border-radius: 12px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	margin-left: 210px;
-}
-.service .topic {
-	font-size: 30px;
-	font-weight: 500;
-	margin-bottom: 20px;
-}
-.content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.content .list {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	margin-right: 50px;
-	position: relative;
-	line-height: 80px;
-}
-.content .list label {
-	height: 60px;
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 60px;
-	cursor: pointer;
-	padding-left: 25px;
-	transition: all 0.5s ease;
-	color: #000000;
-	z-index: 12;
-}
-#conveyancing:checked~.list label.conveyancing, #litigation:checked~.list label.litigation, #cooperate-commercial:checked~.list label.cooperate-and-commercial, #legal-research:checked~.list label.legal-research {
-	color: #fff;
-}
-.content .list label:hover {
-	color: #00094B;
-}
-.content .slider {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 60px;
-	width: 100%;
-	border-radius: 12px;
-	background: #00094B;
-	transition: all 0.4s ease;
-}
-#conveyancing:checked~.list .slider {
-	top: 0;
-}
-#litigation:checked~.list .slider {
-	top: 60px;
-}
-#cooperate-and-commercial:checked~.list .slider {
-	top: 120px;
-}
-#legal-research:checked~.list .slider {
-	top: 180px;
-}
-/* #about:checked ~ .list .slider{
-  top: 240px;
-} */
-
-.content .text-content {
-	width: 80%;
-	height: 100%;
-}
-.content .text {
-	display: none;
-}
-.content .text .title {
-	font-size: 25px;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-.content .text p {
-	text-align: justify;
-}
-.content .text-content .home {
-	display: block;
-}
-#conveyancing:checked~.text-content .conveyancing, #litigation:checked~.text-content .litigation, #cooperate-and-commercial:checked~.text-content .cooperate-and-commercial, #legal-research:checked~.text-content .legal-research {
-	display: block;
-}
-#litigation:checked~.text-content .conveyancing, #cooperate-and-commercial:checked~.text-content .conveyancing, #legal-research:checked~.text-content .conveyancing {
-	display: none;
-}
-.content input {
-	display: none;
-}
 /* end of practice areas/services */
 
 /*******************************/
