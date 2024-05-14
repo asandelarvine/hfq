@@ -66,7 +66,7 @@ a:hover, a:active, a:focus {
 .top-bar {
 	position: relative;
 	height: 90px;
-	background: #121518;
+	background: #002ead;
 }
 .top-bar .logo {
 	padding: 15px 0;
@@ -159,6 +159,7 @@ a:hover, a:active, a:focus {
 	position: relative;
 	padding: 20px 0;
 	transition: .3s;
+	
 }
 .nav-bar.nav-sticky {
 	position: fixed;
@@ -192,7 +193,7 @@ a:hover, a:active, a:focus {
 	border-radius: 0;
 }
 .nav-bar .btn:hover {
-	background: #00094B;
+	background: #000000;
 }
 @media (min-width: 992px) {
 	.nav-bar {
@@ -202,7 +203,7 @@ a:hover, a:active, a:focus {
 		padding: 10px 60px;
 	}
 	.nav-bar, .nav-bar .navbar {
-		background: #000000 !important;
+		background: #00094b !important;
 	}
 	.nav-bar .navbar-brand {
 		display: none;
@@ -237,9 +238,9 @@ a:hover, a:active, a:focus {
 .page-header {
 	position: relative;
 	margin-bottom: 45px;
-	padding: 90px 0;
+	padding: 10px 0;
 	text-align: center;
-	background: #002ead;
+	background: #000000;
 }
 .page-header h2 {
 	position: relative;
@@ -262,7 +263,7 @@ a:hover, a:active, a:focus {
 	position: relative;
 	padding: 0 12px;
 	font-size: 22px;
-	color: #000000;
+	color: #002ead;
 }
 .page-header a:hover {
 	color: #ddd;
@@ -978,7 +979,7 @@ a:hover, a:active, a:focus {
 	list-style-type: none;
 }
 .bg-appointment {
-	background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(images/carousel-3.jpg), no-repeat center center;
+	background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(images/feature.jpg), no-repeat center center;
 	background-size: cover;
 }
 *******************************/
@@ -1303,7 +1304,7 @@ a:hover, a:active, a:focus {
 }
 
 .footer-distributed .footer-center p a{
-  color:  rgb(10, 185, 243);
+  color: #fff;
   text-decoration: none;;
 }
 
