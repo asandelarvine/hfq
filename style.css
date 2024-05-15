@@ -598,7 +598,7 @@ a:hover, a:active, a:focus {
 .section1-services .single-service .title {
 	margin-bottom: 100px;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 20px;
 	transition: color .3s;
 }
 .section1-services .single-service:hover .title {
@@ -606,7 +606,7 @@ a:hover, a:active, a:focus {
 }
 .section1-services .single-service .description {
 	margin-bottom: 20px;
-	font-size: 12px;
+	font-size: 18px;
 	transition: color .3s;
 }
 .section1-services .single-service:hover .description {
