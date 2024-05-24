@@ -1010,7 +1010,7 @@ a:hover, a:active, a:focus {
 }
 .contact .contact-item i {
 	display: inline-block;
-	width: 60px;
+	width: 50px;
 	height: 60px;
 	display: flex;
 	align-items: center;
