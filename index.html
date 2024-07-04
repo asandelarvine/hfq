@@ -27,23 +27,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"><!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 	<style>
-	       @media only screen and (max-width:800px) {
-	 /* For tablets: */
-	 .main {
-	   width: 80%;
-	   padding: 0;
-	 }
-	 .right {
-	   width: 100%;
-	 }
-	}
+	
+	 .hide-on-mobile {
+            display: none;
+        }
 
-	@media only screen and (max-width:500px) {
-	 /* For mobile phones: */
-	 .menu, .main, .right {
-	   width: 100%;
-	 }
-	}
+	 @media (min-width: 768px) {
+            .hide-on-mobile {
+                display: block;
+            }
+        }
 
 	</style>
 	<title>hFarooq</title>
@@ -62,7 +55,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-9">
+					<div class="col-lg-9 hide-on-mobile">
 						<div class="top-bar-right">
 							<div class="text">
 								<h2 style="color: #000000;">8:00-9:00</h2>
@@ -262,82 +255,94 @@
 			</div>
 		</div><!-- End of why choose us -->
 		<!-- Team Start -->
-		<div class="team">
-			<div class="container">
-				<div class="section-header">
-					<h2>Meet Our Expert Team</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="card">
-							<div class="team-item">
-								<div class="face front-face">
-									<div class="team-img"><img alt="Team Image" src="images/Hassan.jpeg"></div>
-									<div class="team-text">
-										<h2>Hassan Farooq Ooko</h2>
-										<p style="text-align: center;">Managing Partner</p>
-									</div>
-								</div>
-							</div>
-							<div class="face back-face">
-								<div class="team-text">
-									<h2>Hassan Farooq Ooko</h2>
-									<p>Managing Partner</p>
-									<div class="team-social">
-										<a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a> <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a> <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a> <a class="fab fa-linkedin-in" href=""></a> <a class="social-in" href="mailto:ookofarook@gmail.com"><i class="fas fa-envelope"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card">
-							<div class="team-item">
-								<div class="face front-face">
-									<div class="team-img"><img alt="Team Image" src="images/partnr3.jpeg"></div>
-									<div class="team-text">
-										<h2>Tabitha Nduta Ngure</h2>
-										<p style="text-align: center;">Partner</p>
-									</div>
-								</div>
-							</div>
-							<div class="face back-face">
-								<div class="team-text">
-									<h2>Tabitha Nduta Ngure</h2>
-									<p>Partner</p>
-									<div class="team-social">
-										<a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a> <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a> <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a> <a class="fab fa-linkedin-in" href=""></a> <a class="social-in" href="mailto:hfarooqparalegalservices@gmail.com"><i class="fas fa-envelope"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card">
-							<div class="team-item">
-								<div class="face front-face">
-									<div class="team-img"><img alt="Team Image" src="images/Felix.jpeg"></div>
-									<div class="team-text">
-										<h2>Felix Nyakundi</h2>
-										<p style="text-align: center;">Partner</p>
-									</div>
-								</div>
-							</div>
-							<div class="face back-face">
-								<div class="team-text">
-									<h2>Felix Nyakundi</h2>
-									<p>Partner</p>
-									<p></p>
-									<div class="team-social">
-										<a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a> <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a> <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a> <a class="fab fa-linkedin-in" href=""></a> <a class="social-in" href="mailto:fellohomwenga@gmail.com"><i class="fas fa-envelope"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- Team End -->
+<div class="team">
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet Our Expert Team</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="team-item">
+                        <div class="face front-face">
+                            <div class="team-img"><img alt="Team Image" src="images/Hassan.jpeg"></div>
+                            <div class="team-text">
+                                <h2>Hassan Farooq Ooko</h2>
+                                <p>Managing Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face back-face">
+                        <div class="team-text">
+                            <h2>Hassan Farooq Ooko</h2>
+                            <p>Managing Partner</p>
+                            <div class="team-social">
+                                <a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a>
+                                <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a>
+                                <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a>
+                                <a class="fab fa-linkedin-in" href=""></a>
+                                <a class="social-in" href="mailto:ookofarook@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="team-item">
+                        <div class="face front-face">
+                            <div class="team-img"><img alt="Team Image" src="images/partnr3.jpeg"></div>
+                            <div class="team-text">
+                                <h2>Tabitha Nduta Ngure</h2>
+                                <p>Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face back-face">
+                        <div class="team-text">
+                            <h2>Tabitha Nduta Ngure</h2>
+                            <p>Partner</p>
+                            <div class="team-social">
+                                <a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a>
+                                <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a>
+                                <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a>
+                                <a class="fab fa-linkedin-in" href=""></a>
+                                <a class="social-in" href="mailto:hfarooqparalegalservices@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="team-item">
+                        <div class="face front-face">
+                            <div class="team-img"><img alt="Team Image" src="images/Felix.jpeg"></div>
+                            <div class="team-text">
+                                <h2>Felix Nyakundi</h2>
+                                <p>Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face back-face">
+                        <div class="team-text">
+                            <h2>Felix Nyakundi</h2>
+                            <p>Partner</p>
+                            <div class="team-social">
+                                <a class="fab fa-facebook" href="https://www.facebook.com/Hfarooq-Paralegal-Services-107933252051454/"></a>
+                                <a class="fab fa-instagram" href="https://www.instagram.com/hfarooqparalegal"></a>
+                                <a class="fab fa-twitter" href="https://twitter.com/farooqparalegal/"></a>
+                                <a class="fab fa-linkedin-in" href=""></a>
+                                <a class="social-in" href="mailto:fellohomwenga@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End --><!-- Team End -->
 		<br>
 		<br>
 		<br>

@@ -31,23 +31,18 @@
 	<link href="https://unpkg.com/bs-brain@2.0.4/components/services/service-5/assets/css/service-5.css" rel="stylesheet">
 
 	<style>
-		@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-	width: 80%;
-	padding: 0;
-  }
-  .right {
-	width: 100%;
-  }
- }
-
- @media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-	width: 100%;
-  }
- }
+	
+		.hide-on-mobile {
+			   display: none;
+		   }
+   
+		@media (min-width: 768px) {
+			   .hide-on-mobile {
+				   display: block;
+			   }
+		   }
+   
+	   </style>
 
  </style>
 	<title>hFarooq</title>
@@ -68,7 +63,7 @@
 						</div>
 					</div>
 					<div class="col-lg-9">
-						<div class="top-bar-right">
+						<div class="top-bar-right hide-on-mobile">
 							<div class="text">
 								<h2 style="color: #000000;">8:00-9:00</h2>
 								<br>
